@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<title>Daniel Sanfelice - Autonomous System Professional</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('/static/images/dam.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/static/images/rock-overview.JPG");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/static/images/Tahiti-hut.jpg");
+  min-height: 400px;
+}
+
+/* Fourth image (Contact) */
+.bgimg-4 {
+  background-image: url("/static/images/Jeep-desert.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i>ABOUT</a>
+    <a href="#blog" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i>BLOG</a>
+    <a href="#resume" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i>RESUME</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i>CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#blog" class="w3-bar-item w3-button" onclick="toggleFunction()">BLOG</a>
+    <a href="#resume" class="w3-bar-item w3-button" onclick="toggleFunction()">RESUME</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <p class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">DANIEL SANFELICE <br></br> 
+    Autonomous System Professional | Aspiring Engineer | Teacher </p>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>I Love Drones and Technology</em></p>
+  <p>My name is Daniel Sanfelice and I love drones and technology. I have been in the drone industry for 8 years and I love what I do. I love that I get to work with other people who are just as passionate as I am and who want to see the drone industry advance. I have extensive experience with drone product management, drone program management, high-risk drone operations, autonomous system training, autonomous system troubleshooting and repair, robotic system design and autonomous system business development</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Daniel Sanfelice</b></p><br>
+      <img src="/static/images/Dan-profile (copy).jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>I am a dedicated and passionate Autonomous Systems professional with a wide range of experience spanning end-use and development. Known for my exemplary work ethic, I keep the business moving forward in every situation with rapid response to problems and decisive leadership in challenging environments.</p>
+
+      <b>Highlights of my background include</b><br>
+      
+      <p><b>Managing autonomous programs.</b> In both military and civilian environments, I have led successful UAS programs that involved up to 50+ personnel and millions of dollars in equipment. I designed and facilitated training that ensured optimal operator performance and developed programs that captured the attention of U.S. government agencies and foreign nations.</p>
+      
+      <p><b>Delivering clients the best possible product.</b>  I leverage my experience as an end-user in extreme, stressful environments during overseas military deployments combined with my knowledge of product engineering to bridge the gap between customers and developers. Providing engineering teams with VOC feedback enables them to align product engineering with customers’ actual needs.</p>
+      
+      <p><b>Driving profitable and sustainable business development.</b>  As an effective relationship builder, I consult with customers and prospects to identify their needs, define specifications, and demonstrate products that differentiate products and lead to multimillion-dollar deals with opportunities to extend and expand contracts.</p>
+      
+      <p><b>Able to learn challenging technical topics.</b>  I am a lifelong learner of technology and am fascinated with computer programming and hardware. I am currently studying several technical subjects such as Python computer programming, open source drone autopilots, and the CompTIA A+ and Network+ certificates. Examples of my current projects are a DIY autonomous remote-controlled boat and a personal website using Python and Flask.</p>
+      
+      <p></p>As a Silicon Valley native, I grew up watching tech companies revolutionize the world. I am thrilled to be a part of the next wave of revolution where the only thing that limits me is my own imagination. The opportunity to shape the future of the autonomous industry is one that excites and energizes me.</p>
+      
+    </div>
+
+<!-- Add more items from your intro paragraph and resume-->    
+  </div>
+  <p class="w3-large w3-center w3-padding-16">I'm really good at:</p>
+  <p class="w3-wide"><i class="fa-solid fa-plane"></i>UAS Product Management</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa-solid fa-dollar-sign"></i>Technical Operations</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa-solid fa-wrench"></i>Drone Repair and Troubleshooting</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+  
+  <br>
+  
+  <div>
+  <p class="w3-large w3-center w3-padding-16">Things I am working on:</p>
+  <p class="w3-wide"><i class="fa-brands fa-python"></i>Python Programming</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:20%">20%</div>
+  </div>
+  <p class="w3-wide"><i class="fa-solid fa-car-battery"></i>Systems Engineering & Design</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:55%">55%</div>
+  </div>
+  <p class="w3-wide"><i class="fa-solid fa-desktop"></i>Web Development</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:15%">15%</div>
+  </div>
+  
+  <br>
+
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">15+</span><br>
+    Years of Experience
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">10+</span><br>
+    Countries Worked In
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">15+</span><br>
+    Drone Systems Flown
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">1000+</span><br>
+    Burritos Eaten
+  </div>
+
+
+</div>
+
+<br>
+<br>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">WRITING</span>
+  </div>
+</div>
+
+<!-- Container (Blog Section) -->
+<div class="w3-content w3-container w3-padding-64" id="blog">
+  <h3 class="w3-center">MY LATEST BLOGS</h3>
+  <p class="w3-center"><em>Here are some of my latest pieces of writing</em> <br></br>Click on the images to learn more</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <a href="https://www.linkedin.com/pulse/humans-more-important-than-hardware-daniel-sanfelice/?trackingId=8zLL5iEHTBch6%2BnrVcE3eQ%3D%3D"> <t>Humans Are More Important Than Hardware</t>
+      <img src="static/images/humans are.jpg" style="width:100%" onclick="onClick()" class="w3-hover-opacity" alt="Humans Are More Important Than Hardware">
+      </a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="https://www.linkedin.com/pulse/troubleshooting-theory-5-principles-system-daniel-sanfelice/?trackingId=1hxoKW0lz0vN20QmBJCi8w%3D%3D"> <t>Troubleshooting Theory: 5 Principles of Troubleshooting Theory</t>
+      <img src="static/images/troubleshoot.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Troubleshooting Theory: 5 Principles of Troubleshooting Theory">
+    </div>
+
+    <div class="w3-col m3">
+      <a href="https://www.modalai.com/blogs/blog/five-essential-components-of-high-flying-drones-gps"> <t>Five Essential Components of High-Flying Drones: GPS</t>
+      <img src="static/images/gps.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Five Essential Components of High-Flying Drones: GPS">
+    </div>
+
+    <div class="w3-col m3">
+      <a href="https://www.modalai.com/blogs/blog/five-essential-components-of-high-flying-drones-motors-and-propellers"> <t>Five Essential Components of High Flying Drones: Motors and Propellers</t>
+      <img src="static/images/modal-seeker.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Qive Essential Components of High Flying Drones: Motors and Propellers">
+    </div>
+  </div>
+
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <a href="https://www.modalai.com/blogs/blog/five-essential-components-of-high-flying-drones-radios-and-data-links"> <t>Five Essential Components of High Flying Drones: Radios and Data Links</t>
+      <img src="static/images/tracking.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Five Essential Components of High Flying Drones: Radios and Data Links"></a>
+    </div>
+
+<!-- 
+    <div class="w3-col m3">
+
+      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    </div>
+    <br>--> 
+  </div>
+</div>
+
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">Resume</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="resume">
+  <h3 class="w3-center">MY EXPERIENCE</h3>
+
+      <!--EDUCATION DESCRIPTION -->
+      <div class="container desc">
+        <div class="row">
+  
+          <div class="col-lg-2 col-lg-offset-1">
+            <h5><b>EDUCATION</b></h5>
+          </div>
+          <div class="col-lg-6">
+            <p>
+              <t>BA International Security and Conflict Resolution - <i>Environmental Security</i></t><br/><t>San Diego State University</t><br/><i>Graduated 2010</i>
+            </p>
+          </div>
+         
+  
+          <div class="col-lg-6 col-lg-offset-3">
+            <p>
+              <t>Complete Python Training Course</t><br/><t>Udemy.com</t><br/>
+              <i>IN PROGRESS</i>
+            </p>
+          </div>
+          
+          <div class="col-lg-6 col-lg-offset-3">
+            <p>
+              <t>CompTIA A+ and Network+ Certificates</t><br/><t>Professor Messor</t><br/>
+              <i>IN PROGRESS</i>
+            </p>
+          </div>
+  
+        </div>
+        <!--/.row -->
+        <br>
+        <hr>
+      </div>
+
+      <div class="container desc">
+        <div class="row">
+    
+          <div class="col-lg-2 col-lg-offset-1">
+            <h5><b>WORK</b></h5>
+          </div>
+
+          <div class="col-lg-6">
+            <p>
+              <t><b>Autonomous Vehicle Test Manager</b></t><br/>Argo AI (April 2022 - July 2022)<br/>
+            </p>
+            <p>
+              <more><li>Managed a team of Autonomous Vehicle System (AVS) Test Specialists and oversaw daily planning, deployment, and maintenance of 13 autonomous vehicles for public road testing.</li><br>
+                
+              <li>Gave assessment and feedback on 5 separate sections of the 4-week autonomous vehicle training certification to better prepare trainees and improve overall driver performance and graduation rates.</li><br>
+                  
+              <li>Increased performance and repeatability by building documentation for 15+ processes for integrating new Test Managers in the 3-week Test Manager course. Held 5 performance reviews of AVS Test Specialists.</li></more>
+            </p>
+
+          </div>
+    
+          <br>
+          <hr>
+          <br>
+          
+
+          <div class="col-lg-6 col-lg-offset-3">
+            <p>
+              <t><b>Test Pilot and Systems Integration</b></t><br/> Modal AI Incorporated (June 2020 - April 2022)<br/>
+            </p>
+            <p>
+              <more><li>Involved in testing, building, troubleshooting, and providing detailed flight test engineering feedback for 7 prototype aircraft systems, including the RB5 5G reference drone.</li><br>
+                
+              <li>Provided end-user feedback and validation for software and hardware rollouts of 50+ software and hardware iterations with PX4, Linux, and other various software suites.</li><br>
+                
+              <li>Wrote 5 blog articles for the company website on topical and pertinent topics for the company and its customers.</li></more>
+            </p>
+          </div>
+
+          <br>
+          <hr>
+          <br>
+          
+          <div class="col-lg-6 col-lg-offset-3">
+            <p>
+              <t><b>San Diego Gas and Electric UAS Fleet Maintenance Chief and Program Consultant</b></t><br/> TEEDEE UAS (January 2020 - April 2022) <br/>
+            </p>
+            <p>
+              <more><li>Designed and implemented automated aircraft maintenance and flight tracking workflow for SDGE UAS fleet of 40+ aircraft. Created the first battery tracking system for SDGE safety audit purposes.</li><br>
+                
+              <li>Overhauled SDGE UAS department workflows for better reliability and efficiency. Streamlined user workflows, automated flight tracking, and created thoughtful design and execution of day-to-day operations.</li><br>
+              
+              <li>Oversaw SOP/emergency action development and training of internal pilots for high-risk use case development. Use cases included high-pressure gas leak detection, power line pulling, and Public Safety Power Shutoff operations.</li></more>
+            </p>
+            </div>
+
+            <br>
+            <hr>
+            <br>
+          
+          <div class="col-lg-6 col-lg-offset-3">
+            <p>
+              <t><b>UAS Product Management | UAS Operations Manager | UAS Subject Matter Expert</b></t><br/> Swift Engineering Inc. (March 2018 - December 2019)<br/>
+            </p>
+            <p>
+              <more><li>Led development of winning proposal for $17.6M comprehensive UAS program contract. Developed use cases and concepts of operations, defined the number and type of aircraft, sensors, and radios, and determined repair schedules. This contract created the capability to spin off Swift Tactical Services company.</li><br>
+
+              <li>Captured the first UAS services contract for a Japanese subsidiary, representing $2.1M in total contract value, by orchestrating and executing the first autonomous flight demo in Kobe, Japan's history. This demo positioned our subsidiary to win remaining $2M in business by successfully delivering on contract terms for City of Kobe and Hyogo Prefecture.</li><br>
+                
+              <li>Held multi-faceted role, encompassing UAS program, operations, and safety management coupled with business development. Enabled sales and new market penetration through lead generation, deal closing, and successful, relevant UAV demonstrations for both domestic and international customers.</li><br>
+
+              <li>Initiated efforts to penetrate the U.S. government market by scheduling a demo for DHS Robotic Aircraft Sensor Program (RASP-B) to identify unmanned aerial systems with sensors for use in search-and-rescue, reconnaissance, active shooter response, hostage rescue, and other border security scenarios.</li><br>
+                
+              <li>Managed customer / UAS service provider relationships, high-level UAS operations, and remote pilot in command operations for UAS service contracts. I consulted with domestic and foreign government agencies to define needs and specifications, as well as to manage high-level demos. Partnered with the engineering team to design and build high-quality aircraft and platforms for ease of use and relevance to client needs. Develop, test, and optimize CONOPS to align demos with customer needs and use cases.</li> </more>
+            </p>
+          </div>
+  
+          <br>
+          <hr>
+          <br>
+
+          <div class="col-lg-6 col-lg-offset-3">
+            <p>
+              <t><b>UAS Program Manager and UAS Operator (E6 / SB1)</b></t><br/> United States Navy (December 2011 - December 2017)<br/>
+            </p>
+            <p>
+              <more><li>Was promoted through various roles and responsibilities, including UAS Program Manager for unit of 300 personnel with 30-50 operators and ~$5M in equipment; Lead UAS Operator with 180 flight hours logged on Aqua Puma UAV; Special Forces Liaison, US Embassy Kuwait; Lead Radio Operator utilizing and maintaining $2.7M in classified communication equipment; and Lead Master Mariner executing maritime operations aboard civilian vessels.</li></more>
+            </p>
+          </div>
+          
+          <br>
+          <hr>
+          
+      </div>
+
+</div>
+
+
+<br>
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Fourth Parallax Image with Portfolio Text -->
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+
+<div class="w3-content w3-container w3-padding-64" id="contact">
+
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="/static/images/map.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa-sharp fa-solid fa-briefcase fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <a href="https://www.linkedin.com/in/danielsanfelice/"> LinkedIn </a> <br>
+        <i class="fa-solid fa-laptop-code fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <a href="https://github.com/DSanfelice"> Github </a><br>
+        <i class="fa-sharp fa-solid fa-hashtag fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <a href="https://twitter.com/beginner_drones"> Twitter </a><br>
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> San Diego, US<br>
+        
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
